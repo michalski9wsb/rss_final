@@ -1,56 +1,48 @@
 body{
-    background-color: darkred;
-    font-family: 'Roboto', sans-serif;
+    background-image: url(geometric-leaves/geometric-leaves.png);
+    font-family: 'Trade Winds' ;
 }
 h1{
     display: block;
-    border-radius: 20px;
-    background-color: darkred;
-    color: black;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #400112;
+    color: white;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     position: relative;
 }
 form{
-    border-radius: 30px;
+    border-radius: 20px 20px 0 0;
     margin-left: 20%;
     margin-top: 10%;
     width: 60%;
-    background-color: darkred;
+    background-color: #BF3F61;
 }
 input{
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 5px;
-    margin: 10px;
 }
 input[type=submit]{
-    margin-left: 1%;
-    width: 20vw;
-}
-#save{
-    width: 20vw;
+    margin-left: 10px;
 }
 button{
     border-radius: 20px;
-    margin: 4px;
+    margin-left: 4px;
     padding: 5px;
+    margin-bottom: 10px;
 }
 #debug{
     overflow: scroll;
-    background-color: lightcoral;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    background-color: gray;
     flex-direction: column;
     margin-left: 5px;
     float: left;
     width: 50%;
     height: 200px;
-    margin-right: 10px;
 }
 .sendlist{
-    background-color: lightcoral;
+    background-color: red;
     height: 200px;
     width: 50%;
     overflow: scroll;
@@ -58,22 +50,19 @@ button{
 
 input#email{
     float: left;
-    width: 100%;
+    width: 36%;
     margin-left: 1%;
 }
 input#url{
     /*margin-top: 2%;*/
     margin-left: 1%;
-    width: 100%;
+    width: 97%;
 }
 .row{
     width: 100%;
     margin-top: 20px;
 }
 .email-flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 }

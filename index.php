@@ -101,15 +101,15 @@
             <?php
         }
     // create message and it's meta
-    $od  = "From: uzytkownik@kursphp.com \r\n";
-    $od .= 'MIME-Version: 1.0'."\r\n";
-    $od .= 'Content-type: text/html; charset=iso-8859-2'."\r\n";
-    $adres = "przyklad@uzycia.pl";
-    $tytul = "Tytuł wiadomości";
-    $wiadomosc = '<html>
+    $from  = "From: michalsikorski@gmail.com \r\n";
+    $from .= 'MIME-Version: 1.0'."\r\n";
+    $from .= 'Content-type: text/html; charset=iso-8859-2'."\r\n";
+    $adr = ".$email.";
+    $title = "RSS";
+    $message = '<html>
     <head>
     </head>
-    <body>';
+    <body><ul>';
 
    
 ?>
@@ -119,19 +119,26 @@
 
             </div>
             <?php 
+if (isset($_GET['send'])) {
             // add rss data to string $wiadomosc 
             foreach($entries as $entry){
-            $wiadomosc.='<li><a href="'.$entry->link.'" />'.$entry->title.'</a> 
+            $message.='<li><a href="'.$entry->link.'" />'.$entry->title.'</a> 
             <p>'.strftime('%m/%d/%Y %I:%M %p',strtotime($entry->pubDate)).'</p>
             <p>'.$entry->description.'</p></li>'; 
                 
             } 
             
             // add end html file to string $wiadomosc
-            $wiadomosc.='</body>
+            $message.='</ul></body>
                 </html>';
-             // use mail function
-            mail($adres, $tytul, $wiadomosc, $od);
+            // use mail function
+            if(mail($adr, $title, $message, $from)){
+                echo '<h1 style="color:red; font-weight: bold;">Wysłano!</h1>';
+            }else{
+                echo '<h1 style="color:red; font-weight: bold;">Blad!</h1>';
+            }
+            
+}
             ?>
             <button id="delete" name="deleteRSS">Usuń</button>
 
