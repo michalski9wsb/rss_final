@@ -1,0 +1,24 @@
+body{
+    background-image: url(geometric-leaves/geometric-leaves.png);
+}
+form{
+    width: 900px;
+    background-color: rgba(100, 100, 100, .5);
+}
+#debug{
+    margin-left: 10px;
+    float: left;
+    width: 60%;
+}
+#helper{
+    float: left;
+}
+input#email{
+    width: 139%;
+}
+input#url{
+    width: 99%;
+}
+.row{
+    width: 100%;
+}

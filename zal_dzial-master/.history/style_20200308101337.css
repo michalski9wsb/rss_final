@@ -1,0 +1,57 @@
+body{
+    background-image: url(geometric-leaves/geometric-leaves.png);
+    font-family: 'Trade Winds' ;
+}
+h1{
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #400112;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+form{
+    border-radius: 20px 20px 0 0;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 60%;
+    background-color: #BF3F61;
+}
+input{
+    border-radius: 20px;
+    padding: 5px;
+}
+input[type=submit]{
+    margin-left: 10px;
+}
+button{
+    border-radius: 20px;
+    margin-left: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#debug{
+    margin-left: 5px;
+    float: left;
+    width: 60%;
+}
+#debugi{
+    width: 37%;
+
+}
+input#email{
+    float: left;
+    width: 36%;
+    margin-left: 1%;
+}
+input#url{
+    /*margin-top: 2%;*/
+    margin-left: 1%;
+    width: 97%;
+}
+.row{
+    width: 100%;
+    margin-top: 20px;
+}

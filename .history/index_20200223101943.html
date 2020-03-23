@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <title>Send RSS</title>
+        <meta name="deskription" content="Apk for RSS" />
+        <meta name="keywords" content="RSS,aplication, send" />
+        <meta http-equiv="X-UA-Compatioble" content="IE=edge,chrome=1" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form method="get" action="send.php">
+            <div class="url-flex row">
+                <input id="url" name="url" type="url" placeholder="url"/>
+            </div>
+            <div class="email-flex row">
+                <input id="email" name="email" type="email" placeholder="email" />
+                <div id="content">
+
+                </div>
+             </div>
+
+            <div class="row">
+                <input id="send" type="submit" value="Send"/>
+                <button id="save" name="save">Save</button>
+            </div>
+        </form>
+    </body>
+</html>

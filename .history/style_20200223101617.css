@@ -1,0 +1,9 @@
+body{
+    background-image: url(geometric-leaves/geometric-leaves.png);
+}
+#email{
+    background-color: gray;
+}
+form:first-child{
+    background-color: rebeccapurple;
+}
