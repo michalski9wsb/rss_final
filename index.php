@@ -132,7 +132,7 @@ if (isset($_GET['send'])) {
             $message.='</ul></body>
                 </html>';
             // use mail function
-            mail($adr, $title, $message, $from)
+            mail($adr, $title, $message, $from);
             
 }
             ?>
