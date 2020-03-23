@@ -132,11 +132,7 @@ if (isset($_GET['send'])) {
             $message.='</ul></body>
                 </html>';
             // use mail function
-            if(mail($adr, $title, $message, $from)){
-                echo '<h1 style="color:red; font-weight: bold;">Wysłano!</h1>';
-            }else{
-                echo '<h1 style="color:red; font-weight: bold;">Blad!</h1>';
-            }
+            mail($adr, $title, $message, $from)
             
 }
             ?>
